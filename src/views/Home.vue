@@ -12,7 +12,7 @@
                         <router-link class="nav-link" to="/calendar"><img src="../assets/calendar.png" class="home-icon">Calendar</router-link>
                         <router-link class="nav-link" to="/Statistics"><img src="../assets/grafica.png" class="home-icon">Appointment Statistics</router-link>
                         <router-link class="nav-link" to="/waitlist"><img src="../assets/waitlist.png" class="home-icon">Waitlist</router-link>
-                        <a class="nav-link" href="#"><img src="../assets/advertasement.png" class="home-icon">Advertisement Opportunities</a>
+                        <a class="nav-link" href="#"><img src="../assets/advertasement.png" class="home-icon">Advertising Opportunities</a>
                         <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
                     </nav>
                 </div>

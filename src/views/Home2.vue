@@ -17,7 +17,7 @@
                         <router-link class="nav-link" to="/waitlist"><img src="../assets/waitlist.png"
                                 class="home-icon">Waitlist</router-link>
                         <a class="nav-link" href="#"><img src="../assets/advertasement.png"
-                                class="home-icon">Advertisement Opportunities</a>
+                                class="home-icon">Advertising Opportunities</a>
                     </nav>
                 </div> -->
                 <div class="col-12" style="padding: 0;">

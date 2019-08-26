@@ -13,12 +13,13 @@
                                 src="../assets/profile.png" class="home-icon">Profile</router-link>
                         <router-link class="nav-link" to="/calendar"><img src="../assets/calendar.png"
                                 class="home-icon">Calendar</router-link>
-                        <router-link class="nav-link" to="/Statistics"><img src="../assets/grafica.png" class="home-icon">Appointment
+                        <router-link class="nav-link" to="/Statistics"><img src="../assets/grafica.png"
+                                class="home-icon">Appointment
                             Statistics</router-link>
                         <router-link class="nav-link" to="/waitlist"><img src="../assets/waitlist.png"
                                 class="home-icon">Waitlist</router-link>
                         <a class="nav-link" href="#"><img src="../assets/advertasement.png"
-                                class="home-icon">Advertisement Opportunities</a>
+                                class="home-icon">Advertising Opportunities</a>
                         <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
                     </nav>
                 </div>
@@ -27,15 +28,16 @@
                         <img class="logo2" src="../assets/logomiapplogin.png">
 
                         <p class="text">Medical Intelligent Appointment</p>
-                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button> -->
 
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <!-- <img class="icon-btn" src="../assets/block.png">
                             <img class="icon-btn2" src="../assets/leyend.png">
                             <img class="icon-btn3" src="../assets/plus.png"> -->
-                            <img class="icon-btn4" src="../assets/logout.png">
+                            <div class="card profile-btn" style="width: 18rem;">
+                                <img class="dropdown-img" src="../assets/doc.jpg">
+                                <p class="dr-name">John Doe</p>
+                            </div>
+                            <router-link to="#"><img class="icon-btn4" src="../assets/logout.png"></router-link>
                         </div>
                     </nav>
 
@@ -855,13 +857,9 @@
     .navbar-expand-lg,
     .navbar-light,
     .bg-light {
-        background: #212121 !important;
-        height: 60px;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 100;
+        background: #1e1e1e !important;
+        /* padding: 0; */
+        height: 80px;
     }
 
     .nav-item {
@@ -884,9 +882,6 @@
     .nav-link:hover {
         color: #29abe2 !important;
         font-weight: 200;
-        /* font-size: 14px; */
-        /* letter-spacing: 1px; */
-        /* margin-left: 20px; */
         margin-right: 20px;
     }
 
@@ -927,11 +922,39 @@
         font-weight: 500;
     }
 
-    .icon-btn4 {
+    .icon-btn {
         width: 30px;
         height: 30px;
         position: absolute;
+        right: 170px;
+    }
+
+    .icon-btn2 {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 130px;
+    }
+
+    .icon-btn3 {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 90px;
+    }
+
+    .icon-btn4 {
+        width: 30px;
+        height: 30px;
+        top: 25px;
+        position: absolute;
         right: 50px;
+        transition: .5s;
+
+    }
+
+    .icon-btn4:hover {
+        background: rgba(255, 255, 255, 0.103);
     }
 
     .home-icon {
@@ -963,6 +986,14 @@
         border-radius: none;
         color: grey;
         border-color: #29abe2;
+    }
+
+
+    .icon-btn4 {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 50px;
     }
 
     .delete-btn:hover {
@@ -1011,12 +1042,43 @@
         font-weight: 500;
         padding: 10px;
         box-shadow: 0 8px 6px -6px black;
-
     }
 
     .upload {
         font-size: 15px;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
+    }
+
+    .profile-btn {
+        height: 80px;
+        position: absolute;
+        right: 90px;
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        
+    }
+
+    .profile-btn:hover {
+        background: rgba(255, 255, 255, 0.329);
+    }
+
+    .dr-name {
+        font-family: "Montserrat", sans-serif;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 25px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .dropdown-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 15px;
+        position: absolute;
+        left: 10px;
     }
 </style>

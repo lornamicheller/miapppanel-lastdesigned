@@ -22,19 +22,24 @@
                         <router-link class="nav-link" style="color: #29abe2 !important;" to="/waitlist"><img
                                 src="../assets/waitlist.png" class="home-icon">Waitlist</router-link>
                         <a class="nav-link" href="#"><img src="../assets/advertasement.png"
-                                class="home-icon">Advertisement Opportunities</a>
+                                class="home-icon">Advertising Opportunities</a>
                         <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
                     </nav>
 
                     <div class="container-fluid" style="position: absolute; top: 400px;">
                         <div>
-                            <p style="text-align: left; color: white;"><i class="fas fa-circle" style="color: white; margin-right: 10px;"></i>Patient is in the waitlist.</p>
+                            <p style="text-align: left; color: white;"><i class="fas fa-circle"
+                                    style="color: white; margin-right: 10px;"></i>Patient is in the waitlist.</p>
                         </div>
                         <div>
-                            <p style="text-align: left; color: white;"><i class="fas fa-circle" style="color: grey; margin-right: 10px;"></i>Patient completed or canceled appointment.</p>
+                            <p style="text-align: left; color: white;"><i class="fas fa-circle"
+                                    style="color: grey; margin-right: 10px;"></i>Patient completed or canceled
+                                appointment.</p>
                         </div>
                         <div>
-                            <p style="text-align: left; color: white;"><i class="fas fa-circle" style="color: #29abe2; margin-right: 10px;"></i>Health or Wellness provider is currently attending to this
+                            <p style="text-align: left; color: white;"><i class="fas fa-circle"
+                                    style="color: #29abe2; margin-right: 10px;"></i>Health or Wellness provider is
+                                currently attending to this
                                 patient.</p>
                         </div>
                     </div>
@@ -68,6 +73,9 @@
                         </div>
                         <p class="open-label">Open Waitlist</p>
 
+                        <button class="btn btn-primary settings" data-toggle="modal"
+                            data-target=".bd-example-modal-lg">waitlist settings</button>
+
                         <button type="button" class="btn btn-primary add-btn" data-toggle="modal"
                             data-target="#exampleModalCenter"><i class="fas fa-plus"></i></button>
                     </div>
@@ -96,10 +104,22 @@
                             <tbody>
                                 <tr>
                                     <td class="content-table">1</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" data-toggle="modal" data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn" data-toggle="modal"
                                             data-target="#exampleModalCenter7">Complete Turn</button>
@@ -121,7 +141,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Booked and pending confirmation
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -143,7 +173,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Confirmed
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -164,7 +204,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Pending Check-in
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -185,7 +235,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Arrived at Office
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -206,7 +266,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Canceled Appointment
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -227,7 +297,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Delayed
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -248,7 +328,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -269,7 +359,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -290,7 +390,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -311,7 +421,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -332,7 +452,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -353,7 +483,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -374,7 +514,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -395,7 +545,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -416,7 +576,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -437,7 +607,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -458,7 +638,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -479,7 +669,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -500,7 +700,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -521,7 +731,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -542,7 +762,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -563,7 +793,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -584,7 +824,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -605,7 +855,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -626,7 +886,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -647,7 +917,17 @@
                                     <td class="content-table">Jane Doe</td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
-                                    <td class="content-table">Checked-in Complete</td>
+                                    <td class="content-table">Check-in Complete
+                                        <!-- Different status of patients are
+                                    - Booked and pending confirmation
+                                    - Confirmed
+                                    - Pending Check-in
+                                    - Checked-in
+                                    - Arrived at Office
+                                    - Canceled Appointment
+                                    - Delayed (Amount of time 15mins, 30mins, 1 hour )
+                                    -->
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
                                     </td>
@@ -870,6 +1150,27 @@
 
         <!-- miapp promo modal -->
 
+        <div class="modal fade" id="exampleModalCenter30" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- move btn modal -->
         <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog3"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="font-family: 'Montserrat', sans-serif;">
@@ -1033,6 +1334,835 @@
             </div>
         </div>
         <!-- complet turn btn modal -->
+
+        <!-- modal waitlist setting -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true" style="font-family: 'Montserrat', sans-serif;">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="font-family: 'Montserrat', sans-serif;">
+                            Waitlist setting</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <select style="font-family: 'Montserrat', sans-serif; font-size: 15px;" class="form-control"
+                                id="exampleFormControlSelect1">
+                                <option>Open Manually / Close Manually</option>
+                                <option>Open Automatically / Close Manually</option>
+                                <option>Open Manually / Close Automatically</option>
+                                <option>Open Automatically / Close Automatically</option>
+                            </select>
+                        </div>
+
+                        <div class="container">
+                            <p>When open automatically please choose days and time for waitlist to open and
+                                close</p>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                    <h1 class="title-schedule">Days</h1>
+                                    <div class="day-container">
+                                        <button type="button"
+                                            class="btn btn-primary delete-btn delete-active">Sunday</button>
+                                    </div>
+                                    <div class="day-container">
+                                        <button type="button" class="btn btn-primary delete-btn">Monday</button>
+                                    </div>
+                                    <div class="day-container">
+                                        <button type="button" class="btn btn-primary delete-btn">Tuesday</button>
+                                    </div>
+                                    <div class="day-container">
+                                        <button type="button" class="btn btn-primary delete-btn">Wednesday</button>
+                                    </div>
+                                    <div class="day-container">
+                                        <button type="button" class="btn btn-primary delete-btn">Thursday</button>
+                                    </div>
+                                    <div class="day-container">
+                                        <button type="button" class="btn btn-primary delete-btn">Friday</button>
+                                    </div>
+                                    <div class="day-container">
+                                        <button type="button" class="btn btn-primary delete-btn">Saturday</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                    <h1 class="title-schedule">Open</h1>
+
+                                    <!-- Sunday Input -->
+                                    <select class="form-control start-schedule" placeholder="0:00AM">
+                                        <option value="Manually" class="title-category">Manually</option>
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Monday Input -->
+                                    <select class="form-control start-schedule" placeholder="0:00AM">
+                                        <option value="Manually" class="title-category">Manually</option>
+
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!--Tuesday Input -->
+
+                                    <select class="form-control start-schedule" placeholder="0:00AM">
+                                        <option value="Manually" class="title-category">Manually</option>
+
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Wednesday Input -->
+
+                                    <select class="form-control start-schedule" placeholder="0:00AM">
+                                        <option value="Manually" class="title-category">Manually</option>
+
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Thursday Input -->
+
+                                    <select class="form-control start-schedule" placeholder="0:00AM">
+                                        <option value="Manually" class="title-category">Manually</option>
+
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Friday Input -->
+
+                                    <select class="form-control start-schedule" placeholder="0:00AM">
+                                        <option value="Manually" class="title-category">Manually</option>
+
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Saturday Input -->
+
+                                    <select class="form-control start-schedule" placeholder="0:00AM">
+                                        <option value="Manually" class="title-category">Manually</option>
+
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12">
+                                    <h1 class="title-schedule">Close</h1>
+
+                                    <!-- Sunday Input -->
+                                    <select class="form-control start-schedule" placeholder="0:00PM">
+                                        <option value="Manually" class="title-category">Manually</option>
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Monday Input -->
+                                    <select class="form-control start-schedule" placeholder="0:00PM">
+                                        <option value="Manually" class="title-category">Manually</option>
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!--Tuesday Input -->
+                                    <select class="form-control start-schedule" placeholder="0:00PM">
+                                        <option value="Manually" class="title-category">Manually</option>
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Wednesday Input -->
+
+                                    <select class="form-control start-schedule" placeholder="0:00PM">
+                                        <option value="Manually" class="title-category">Manually</option>
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Thursday Input -->
+
+                                    <select class="form-control start-schedule" placeholder="0:00PM">
+                                        <option value="Manually" class="title-category">Manually</option>
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Friday Input -->
+
+                                    <select class="form-control start-schedule" placeholder="0:00PM">
+                                        <option value="Manually" class="title-category">Manually</option>
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+
+                                    <!-- Saturday Input -->
+                                    <select class="form-control start-schedule" placeholder="0:00PM">
+                                        <option value="Manually" class="title-category">Manually</option>
+                                        <option value="12:00AM" class="title-category">12:00AM</option>
+                                        <option value="12:30AM" class="title-category">12:30AM</option>
+                                        <option value="1:00AM" class="title-category">1:00AM</option>
+                                        <option value="1:30AM" class="title-category">1:30AM</option>
+                                        <option value="2:00AM" class="title-category">2:00AM</option>
+                                        <option value="2:30AM" class="title-category">2:30AM</option>
+                                        <option value="3:00AM" class="title-category">3:00AM</option>
+                                        <option value="3:30AM" class="title-category">3:30AM</option>
+                                        <option value="4:00AM" class="title-category">4:00AM</option>
+                                        <option value="4:30AM" class="title-category">4:30AM</option>
+                                        <option value="5:00AM" class="title-category">5:00AM</option>
+                                        <option value="5:30AM" class="title-category">5:30AM</option>
+                                        <option value="6:00AM" class="title-category">6:00AM</option>
+                                        <option value="6:30AM" class="title-category">6:30AM</option>
+                                        <option value="7:00AM" class="title-category">7:00AM</option>
+                                        <option value="7:30AM" class="title-category">7:30AM</option>
+                                        <option value="8:00AM" class="title-category">8:00AM</option>
+                                        <option value="8:30AM" class="title-category">8:30AM</option>
+                                        <option value="9:00AM" class="title-category">9:00AM</option>
+                                        <option value="9:30AM" class="title-category">9:30AM</option>
+                                        <option value="10:00AM" class="title-category">10:00AM</option>
+                                        <option value="10:30AM" class="title-category">10:30AM</option>
+                                        <option value="11:00AM" class="title-category">11:00AM</option>
+                                        <option value="11:30AM" class="title-category">11:30AM</option>
+                                        <option value="12:00PM" class="title-category">12:00PM</option>
+                                        <option value="12:30PM" class="title-category">12:30PM</option>
+                                        <option value="1:00PM" class="title-category">1:00PM</option>
+                                        <option value="1:30PM" class="title-category">1:30PM</option>
+                                        <option value="2:00PM" class="title-category">2:00PM</option>
+                                        <option value="2:30PM" class="title-category">2:30PM</option>
+                                        <option value="3:00PM" class="title-category">3:00PM</option>
+                                        <option value="3:30PM" class="title-category">3:30PM</option>
+                                        <option value="4:00PM" class="title-category">4:00PM</option>
+                                        <option value="4:30PM" class="title-category">4:30PM</option>
+                                        <option value="5:00PM" class="title-category">5:00PM</option>
+                                        <option value="5:30PM" class="title-category">5:30PM</option>
+                                        <option value="6:00PM" class="title-category">6:00PM</option>
+                                        <option value="6:30PM" class="title-category">6:30PM</option>
+                                        <option value="7:00PM" class="title-category">7:00PM</option>
+                                        <option value="7:30PM" class="title-category">7:30PM</option>
+                                        <option value="8:00PM" class="title-category">8:00PM</option>
+                                        <option value="8:30PM" class="title-category">8:30PM</option>
+                                        <option value="9:00PM" class="title-category">9:00PM</option>
+                                        <option value="9:30PM" class="title-category">9:30PM</option>
+                                        <option value="10:00PM" class="title-category">10:00PM</option>
+                                        <option value="10:30PM" class="title-category">10:30PM</option>
+                                        <option value="11:00PM" class="title-category">11:00PM</option>
+                                        <option value="11:30PM" class="title-category">11:30PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            style="font-family: 'Montserrat', sans-serif; font-size: 13px;">CLOSE</button>
+                        <button type="button" class="btn btn-primary" style="font-family: 'Montserrat', sans-serif; font-size: 13px; background: #29abe2 !important;
+                        border-color: #29abe2;">SAVE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal waitlist setting -->
 
     </div>
 
@@ -1324,5 +2454,64 @@
 
     .modal {
         font-family: 'Montserrat', sans-serif !important;
+    }
+
+    .settings {
+        position: absolute;
+        right: 80px;
+        border: none;
+        background: #2C3E52 !important;
+    }
+
+    .day-container {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .delete-btn {
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        background: transparent;
+        border-radius: none;
+        color: grey;
+        border-color: #29abe2;
+    }
+
+    .delete-btn:hover {
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        background: #29abe2;
+        color: white;
+        border-color: #29abe2;
+    }
+
+    .active {
+        width: 100px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        background: #29abe2;
+        color: white;
+        border-color: #29abe2;
+    }
+
+    .start-schedule {
+        margin-bottom: 10px;
+        border: 1px solid rgb(199, 199, 199);
+        border-radius: 5px;
+        margin-top: 3px;
+        padding-left: 17px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .title-schedule {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-size: 17px;
     }
 </style>

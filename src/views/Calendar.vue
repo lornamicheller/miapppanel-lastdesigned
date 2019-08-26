@@ -21,7 +21,7 @@
                         <router-link class="nav-link" to="/waitlist"><img src="../assets/waitlist.png"
                                 class="home-icon">Waitlist</router-link>
                         <a class="nav-link" href="#"><img src="../assets/advertasement.png"
-                                class="home-icon">Advertisement Opportunities</a>
+                                class="home-icon">Advertising Opportunities</a>
                         <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
                     </nav>
 
@@ -58,8 +58,8 @@
                         </button> -->
 
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                            <router-link to="#" data-toggle="modal" data-target="#exampleModalCenter10"><img class="icon-btn"
-                                    src="../assets/block.png"></router-link>
+                            <router-link to="#" data-toggle="modal" data-target="#exampleModalCenter10"><img
+                                    class="icon-btn" src="../assets/block.png"></router-link>
                             <img class="icon-btn2" src="../assets/leyend.png">
                             <router-link to="#" data-toggle="modal" data-target="#exampleModalCenter"><img
                                     class="icon-btn3" src="../assets/plus.png"></router-link>
@@ -256,13 +256,10 @@
 
                     <!-- add patient modal -->
 
-                    <!-- block days -->
-
-               
-
-                    <!-- Modal -->
+                    <!-- block days Modal -->
                     <div class="modal fade" id="exampleModalCenter10" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="font-family: 'Montserrat', sans-serif;">
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
+                        style="font-family: 'Montserrat', sans-serif;">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -286,11 +283,12 @@
                                         </div>
                                     </form>
                                 </div>
-                                                            <div class="modal-footer">
+                                <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal"
                                         style="font-family: 'Montserrat', sans-serif; font-size: 13px;">CLOSE</button>
-                                    <button type="button" class="btn btn-primary" style="font-family: 'Montserrat', sans-serif; font-size: 13px; background: #29abe2 !important;
-                        border-color: #29abe2;">SAVE</button>
+                                    <button data-toggle="modal" data-target="#exampleModalCenter25" type="button"
+                                        class="btn btn-primary" style="font-family: 'Montserrat', sans-serif; font-size: 13px; background: #29abe2 !important;
+                                    border-color: #29abe2;">SAVE</button>
                                 </div>
                             </div>
                         </div>
@@ -298,11 +296,34 @@
 
                     <!-- block days -->
 
+                    <!-- block days alert -->
+                    <div class="modal fade" id="exampleModalCenter25" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
+                        style="font-family: 'Montserrat', sans-serif;">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5> -->
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Your patients will be notified.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                        style="font-family: 'Montserrat', sans-serif; font-size: 13px;">CLOSE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- block days alert -->
 
                     <!-- modal need help -->
-
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        aria-labelledby="exampleModalLabel" aria-hidden="true"
+                        style="font-family: 'Montserrat', sans-serif;">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -326,8 +347,37 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- modal need help -->
+
+                    <!-- miapp promo modal -->
+
+                    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog2"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
+                        style="font-family: 'Montserrat', sans-serif;">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <!-- <h5 class="modal-title" id="exampleModalLongTitle"
+                            style="font-family: 'Montserrat', sans-serif;">Add Patient Manually</h5> -->
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="font-weight: 500; padding-top: 100px; padding-bottom: 100px;">Would you
+                                        like to send
+                                        MiApp to patient?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                        style="font-family: 'Montserrat', sans-serif; font-size: 13px;">NO</button>
+                                    <button type="button" class="btn btn-primary" style="font-family: 'Montserrat', sans-serif;  background: #29abe2 !important;
+                                    border-color: #29abe2; font-size: 13px;" data-toggle="modal"
+                                        data-target="#exampleModalCenter2">YES</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
                     <!-- modal waitlist setting -->

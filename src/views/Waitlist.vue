@@ -29,18 +29,18 @@
                     <div class="container-fluid" style="position: absolute; top: 400px;">
                         <div>
                             <p style="text-align: left; color: white;"><i class="fas fa-circle"
-                                    style="color: white; margin-right: 10px;"></i>Patient is in the waitlist.</p>
+                                    style="color: white; margin-right: 10px;"></i>patient is in the waitlist</p>
                         </div>
                         <div>
                             <p style="text-align: left; color: white;"><i class="fas fa-circle"
-                                    style="color: grey; margin-right: 10px;"></i>Patient completed or canceled
-                                appointment.</p>
+                                    style="color: grey; margin-right: 10px;"></i>patient completed or canceled
+                                appointment</p>
                         </div>
                         <div>
                             <p style="text-align: left; color: white;"><i class="fas fa-circle"
-                                    style="color: #29abe2; margin-right: 10px;"></i>Health or Wellness provider is
+                                    style="color: #29abe2; margin-right: 10px;"></i>health or Wellness provider is
                                 currently attending to this
-                                patient.</p>
+                                patient</p>
                         </div>
                     </div>
                 </div>
@@ -58,6 +58,142 @@
                             <img class="icon-btn2" src="../assets/leyend.png">
                             <img class="icon-btn3" src="../assets/plus.png"> -->
                             <router-link to="/login"><img class="icon-btn4" src="../assets/logout.png"></router-link>
+                        </div>
+
+                        <div class="card profile-btn" v-on:click="seen = !seen"
+                            style="width: 18rem; borde-radius: 0; background: transparent; border: 0;">
+                            <img class="dropdown-img" src="../assets/doc.jpg">
+                            <p class="dr-name">John Doe</p>
+                        </div>
+
+                        <div class="card dropdown-card" style="width: 18rem;" v-if="seen" id="hide">
+
+                            <!-- first profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor2 2.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- second profile  -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor1.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor3.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor4.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor5.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor6.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor7.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor9.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </nav>
 
@@ -80,7 +216,7 @@
                             data-target="#exampleModalCenter"><i class="fas fa-plus"></i></button>
                     </div>
 
-                    <div class="container-fluid" style="padding: 0; height: 100%; overflow: scroll;">
+                    <div class="container-fluid" style="padding: 0; height: 100%; overflow: scroll; padding-bottom: 100px;">
 
                         <table class="table table-striped table-borderless table-hover table-dark" style="margin: 0;">
                             <thead>
@@ -105,7 +241,8 @@
                                 <tr>
                                     <td class="content-table">1</td>
                                     <td class="content-table">Jane Doe
-                                        <router-link to="#" data-toggle="modal" data-target="#exampleModalCenter30">View More</router-link>
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
                                     </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
@@ -119,6 +256,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                           <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn" data-toggle="modal"
@@ -138,7 +292,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">2</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Booked and pending confirmation
@@ -151,6 +308,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -170,7 +344,10 @@
 
                                 <tr>
                                     <td class="content-table">3</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Confirmed
@@ -183,6 +360,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -201,7 +395,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">4</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Pending Check-in
@@ -214,6 +411,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -232,7 +446,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">5</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Arrived at Office
@@ -245,6 +462,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -263,7 +497,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">6</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Canceled Appointment
@@ -276,6 +513,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -294,7 +548,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">7</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Delayed
@@ -307,6 +564,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -325,7 +599,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">8</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -338,6 +615,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -356,7 +650,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">9</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -369,6 +666,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -387,7 +701,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">10</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -400,6 +717,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -418,7 +752,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">11</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -431,6 +768,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -449,7 +803,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">12</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -462,6 +819,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -480,7 +854,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">13</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -493,6 +870,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -511,7 +905,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">14</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -524,6 +921,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -542,7 +956,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">15</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -555,6 +972,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -573,7 +1007,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">16</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -586,6 +1023,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -604,7 +1058,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">17</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -617,6 +1074,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -635,7 +1109,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">18</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -648,6 +1125,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -666,7 +1160,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">19</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -679,6 +1176,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -697,7 +1211,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">20</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -710,6 +1227,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -728,7 +1262,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">21</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -741,6 +1278,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -759,7 +1313,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">22</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -772,6 +1329,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -790,7 +1364,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">23</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -803,6 +1380,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -821,7 +1415,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">24</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -834,6 +1431,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -852,7 +1466,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">25</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -865,6 +1482,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -883,7 +1517,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">26</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -896,6 +1533,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -914,7 +1568,10 @@
                                 </tr>
                                 <tr>
                                     <td class="content-table">27</td>
-                                    <td class="content-table">Jane Doe</td>
+                                    <td class="content-table">Jane Doe
+                                        <router-link to="#" style="color: white;" data-toggle="modal"
+                                            data-target="#exampleModalCenter30">View More</router-link>
+                                    </td>
                                     <td class="content-table">8:00am</td>
                                     <td class="content-table">8:45am</td>
                                     <td class="content-table">Check-in Complete
@@ -927,6 +1584,23 @@
                                     - Canceled Appointment
                                     - Delayed (Amount of time 15mins, 30mins, 1 hour )
                                     -->
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton"
+                                                style="font-size: 11px; font-family: 'Montserrat', sans-serif;"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Pending Check-in
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Booked and pending confirmation</a>
+                                                <a class="dropdown-item" href="#">Confirmed</a>
+                                                <a class="dropdown-item" href="#">Pending Check-in</a>
+                                                <a class="dropdown-item" href="#">Check-in</a>
+                                                <a class="dropdown-item" href="#">Arrived at Office</a>
+                                                <a class="dropdown-item" href="#">Canceled Appointment</a>
+                                                <a class="dropdown-item" href="#">Delayed</a>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
                                         <button type="button" class="btn btn-primary table-btn">Begin Turn</button>
@@ -955,7 +1629,7 @@
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="font-family: 'Montserrat', sans-serif;">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle"
                             style="font-family: 'Montserrat', sans-serif;">Add Patient Manually</h5>
@@ -1125,7 +1799,7 @@
         <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog2"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="font-family: 'Montserrat', sans-serif;">
                     <div class="modal-header">
                         <!-- <h5 class="modal-title" id="exampleModalLongTitle"
                             style="font-family: 'Montserrat', sans-serif;">Add Patient Manually</h5> -->
@@ -1153,19 +1827,27 @@
         <div class="modal fade" id="exampleModalCenter30" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="font-family: 'Montserrat', sans-serif; text-align: left;">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Jane Doe</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <p>Name: <span style="font-weight: 300;">Jane Doe</span></p>
+                        <p>Phone number: <span style="font-weight: 300;">787-333-8376</span></p>
+                        <p>Email: <span style="font-weight: 300;">janedoe@gmail.com</span></p>
+                        <p>Health Insurance: <span style="font-weight: 300;">Triple S</span></p>
+                        <p>Confirmtion number: #<span style="font-weight: 300;">6353</span></p>
+                        <p>Original Appointment Time: <span style="font-weight: 300;">8:00AM</span></p>
+                        <p>Estimated Actual Appointment Time: <span style="font-weight: 300;">8:45AM</span></p>
+                        <p>Status of Patient: <span style="font-weight: 300;">Check-in Complete</span></p>
+
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            style="font-family: 'Montserrat', sans-serif; font-size: 13px;">CLOSE</button>
                     </div>
                 </div>
             </div>
@@ -1175,7 +1857,7 @@
         <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog3"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="font-family: 'Montserrat', sans-serif;">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="font-family: 'Montserrat', sans-serif;">
                     <div class="modal-header">
                         <!-- <h5 class="modal-title" id="exampleModalLongTitle"
                             style="font-family: 'Montserrat', sans-serif;">Move Patient turn</h5> -->
@@ -1205,7 +1887,7 @@
         <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog4"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="font-family: 'Montserrat', sans-serif;">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="font-family: 'Montserrat', sans-serif;">
                     <div class="modal-header">
                         <!-- <h5 class="modal-title" id="exampleModalLongTitle"
                             style="font-family: 'Montserrat', sans-serif;">Move Patient turn</h5> -->
@@ -1261,7 +1943,7 @@
         <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog5"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="font-family: 'Montserrat', sans-serif;">
                     <div class="modal-header">
                         <!-- <h5 class="modal-title" id="exampleModalLongTitle"
                             style="font-family: 'Montserrat', sans-serif;">Move Patient turn</h5> -->
@@ -1288,7 +1970,7 @@
         <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog6"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="font-family: 'Montserrat', sans-serif;">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="font-family: 'Montserrat', sans-serif;">
                     <div class="modal-header">
                         <!-- <h5 class="modal-title" id="exampleModalLongTitle"
                             style="font-family: 'Montserrat', sans-serif;">Move Patient turn</h5> -->
@@ -1316,7 +1998,7 @@
         <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog7"
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="font-family: 'Montserrat', sans-serif;">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="font-family: 'Montserrat', sans-serif;">
                     <div class="modal-header">
                         <!-- <h5 class="modal-title" id="exampleModalLongTitle"
                             style="font-family: 'Montserrat', sans-serif;">Move Patient turn</h5> -->
@@ -1339,7 +2021,7 @@
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true" style="font-family: 'Montserrat', sans-serif;">
             <div class="modal-dialog modal-lg">
-                <div class="modal-content">
+                <div class="modal-content" style="font-family: 'Montserrat', sans-serif;">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel" style="font-family: 'Montserrat', sans-serif;">
                             Waitlist setting</h5>
@@ -2171,11 +2853,12 @@
 
 <script>
     export default {
+        el: '#hide',
         data() {
             return {
-                key: value
+                seen: false
             }
-        },
+        }
     }
 </script>
 
@@ -2513,5 +3196,84 @@
         font-family: "Montserrat", sans-serif;
         text-align: center;
         font-size: 17px;
+    }
+
+    .profile-btn {
+        height: 80px;
+        position: absolute;
+        right: 90px;
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .profile-btn:hover {
+        background: rgba(255, 255, 255, 0.445);
+    }
+
+    .dr-name {
+        font-family: "Montserrat", sans-serif;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 25px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .dropdown-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 15px;
+        position: absolute;
+        left: 10px;
+        object-fit: cover;
+    }
+
+    .dropdown-card {
+        background: #383838;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        position: absolute;
+        top: 80px;
+        right: 90px;
+        height: 400px;
+        overflow: scroll;
+        z-index: 100;
+        /* display: none; */
+        border-radius: 0;
+        border: none;
+        /* display: none; */
+        box-shadow: 0 8px 6px -6px black;
+    }
+
+    .doctor-profile {
+        height: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .doctor-profile:hover {
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.329);
+    }
+
+    .profile-pic-small {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+
+    .dr-name2 {
+        text-align: right;
+        color: white;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 20px;
     }
 </style>

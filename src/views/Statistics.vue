@@ -40,6 +40,143 @@
                             <img class="icon-btn3" src="../assets/plus.png"> -->
                             <img class="icon-btn4" src="../assets/logout.png">
                         </div>
+
+                        <div class="card profile-btn" v-on:click="seen = !seen"
+                            style="width: 18rem; borde-radius: 0; background: transparent; border: 0;">
+                            <img class="dropdown-img" src="../assets/doc.jpg">
+                            <p class="dr-name">John Doe</p>
+                        </div>
+
+                        <div class="card dropdown-card" style="width: 18rem;" v-if="seen" id="hide">
+
+                            <!-- first profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor2 2.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- second profile  -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor1.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor3.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor4.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor5.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor6.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor7.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor8.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- third profile -->
+
+                            <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                <div class="row justify-content-center" style="margin: 0;">
+                                    <div class="col-2">
+                                        <img class="profile-pic-small" src="../assets/doctor9.png">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="dr-name2">John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
                     </nav>
 
                     <div class="container-fluid" style="overflow: scroll; height: 100vh;">
@@ -54,7 +191,7 @@
                                                 <td>5</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Total patients pending onfirmation:</th>
+                                                <th scope="row">Total patients pending confirmation:</th>
                                                 <td>5</td>
                                             </tr>
                                             <tr>
@@ -116,7 +253,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
@@ -129,11 +266,12 @@
 
 <script>
     export default {
+        el: '#hide',
         data() {
             return {
-                key: value
+                seen: false
             }
-        },
+        }
     }
 </script>
 
@@ -143,12 +281,10 @@
     .navbar-light,
     .bg-light {
         background: #212121 !important;
-        height: 60px;
-        overflow: hidden;
-        position: fixed;
+        height: 80px;
         top: 0;
         width: 100%;
-        z-index: 100;
+
     }
 
     .nav-item {
@@ -283,4 +419,83 @@
     /* .table-dark td, .table-dark th, .table-dark thead th {
         background: #29abe2;
     } */
+
+    .profile-btn {
+        height: 80px;
+        position: absolute;
+        right: 90px;
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .profile-btn:hover {
+        background: rgba(255, 255, 255, 0.445);
+    }
+
+    .dr-name {
+        font-family: "Montserrat", sans-serif;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 25px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .dropdown-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 15px;
+        position: absolute;
+        left: 10px;
+        object-fit: cover;
+    }
+
+    .dropdown-card {
+        background: #383838;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        position: absolute;
+        top: 80px;
+        right: 90px;
+        height: 400px;
+        overflow: scroll;
+        z-index: 100;
+        /* display: none; */
+        border-radius: 0;
+        border: none;
+        /* display: none; */
+        box-shadow: 0 8px 6px -6px black;
+    }
+
+    .doctor-profile {
+        height: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .doctor-profile:hover {
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.329);
+    }
+
+    .profile-pic-small {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+
+    .dr-name2 {
+        text-align: right;
+        color: white;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
 </style>

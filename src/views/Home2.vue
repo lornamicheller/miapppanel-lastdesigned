@@ -33,6 +33,139 @@
                             <!-- <img class="icon-btn" src="../assets/block.png">
                             <img class="icon-btn2" src="../assets/leyend.png">
                             <img class="icon-btn3" src="../assets/plus.png"> -->
+                            <div class="card profile-btn" v-on:click="seen = !seen"
+                                style="width: 18rem; borde-radius: 0; background: transparent; border: 0;">
+                                <img class="dropdown-img" src="../assets/doc.jpg">
+                                <p class="dr-name">John Doe</p>
+                            </div>
+
+                            <div class="card dropdown-card" style="width: 18rem;" v-if="seen" id="hide">
+
+                                <!-- first profile -->
+
+                                <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                    <div class="row justify-content-center" style="margin: 0;">
+                                        <div class="col-2">
+                                            <img class="profile-pic-small" src="../assets/doctor2 2.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="dr-name2">John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- second profile  -->
+
+                                <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                    <div class="row justify-content-center" style="margin: 0;">
+                                        <div class="col-2">
+                                            <img class="profile-pic-small" src="../assets/doctor1.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="dr-name2">John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- third profile -->
+
+                                <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                    <div class="row justify-content-center" style="margin: 0;">
+                                        <div class="col-2">
+                                            <img class="profile-pic-small" src="../assets/doctor3.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="dr-name2">John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- third profile -->
+
+                                <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                    <div class="row justify-content-center" style="margin: 0;">
+                                        <div class="col-2">
+                                            <img class="profile-pic-small" src="../assets/doctor4.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="dr-name2">John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- third profile -->
+
+                                <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                    <div class="row justify-content-center" style="margin: 0;">
+                                        <div class="col-2">
+                                            <img class="profile-pic-small" src="../assets/doctor5.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="dr-name2">John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- third profile -->
+
+                                <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                    <div class="row justify-content-center" style="margin: 0;">
+                                        <div class="col-2">
+                                            <img class="profile-pic-small" src="../assets/doctor6.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="dr-name2">John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- third profile -->
+
+                                <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                    <div class="row justify-content-center" style="margin: 0;">
+                                        <div class="col-2">
+                                            <img class="profile-pic-small" src="../assets/doctor7.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="dr-name2">John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- third profile -->
+
+                                <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                    <div class="row justify-content-center" style="margin: 0;">
+                                        <div class="col-2">
+                                            <img class="profile-pic-small" src="../assets/doctor8.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="dr-name2">John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- third profile -->
+
+                                <div class="container-fluid doctor-profile" style="margin: 0; padding: 0;">
+                                    <div class="row justify-content-center" style="margin: 0;">
+                                        <div class="col-2">
+                                            <img class="profile-pic-small" src="../assets/doctor9.png">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="dr-name2">John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                             <img class="icon-btn4" src="../assets/logout.png">
                         </div>
                     </nav>
@@ -46,25 +179,30 @@
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-3">
-                                <router-link to="/Instructions"><img class="img" src="../assets/instructions.png"></router-link>
+                                <router-link to="/Instructions"><img class="img" src="../assets/instructions.png">
+                                </router-link>
                                 <p>Instructions</p>
                             </div>
                             <div class="col-3">
-                                <router-link to="/Profile"><img class="img" src="../assets/profile boton.png"></router-link>
+                                <router-link to="/Profile"><img class="img" src="../assets/profile boton.png">
+                                </router-link>
                                 <p>Profile</p>
                             </div>
                             <div class="col-3">
-                                <router-link to="/Calendar"><img class="img" src="../assets/calendar botton.png"></router-link>
+                                <router-link to="/Calendar"><img class="img" src="../assets/calendar botton.png">
+                                </router-link>
                                 <p>Calendar</p>
                             </div>
                         </div>
                         <div class="row justify-content-center" style="margin-top: 30px;">
                             <div class="col-3">
-                                <router-link to="/Statistics"><img class="img" src="../assets/grafica bola 2.png">  </router-link>
+                                <router-link to="/Statistics"><img class="img" src="../assets/grafica bola 2.png">
+                                </router-link>
                                 <p>Appointment Statistics</p>
                             </div>
                             <div class="col-3">
-                                <router-link to="/Waitlist"><img class="img" src="../assets/waitlist bola.png"></router-link>
+                                <router-link to="/Waitlist"><img class="img" src="../assets/waitlist bola.png">
+                                </router-link>
                                 <p>Waitlist</p>
                             </div>
                             <div class="col-3">
@@ -83,9 +221,10 @@
 
 <script>
     export default {
+        el: '#hide',
         data() {
             return {
-                key: value
+                seen: false
             }
         },
     }
@@ -98,7 +237,7 @@
     .bg-light {
         background: #212121 !important;
         /* padding: 0; */
-        height: 60px;
+        height: 80px;
     }
 
     .nav-item {
@@ -195,5 +334,83 @@
         height: 100px;
         width: 100px;
         border-radius: 50%;
+    }
+
+    .profile-btn {
+        height: 80px;
+        position: absolute;
+        right: 90px;
+        background: transparent;
+        border-radius: 0;
+        border: none;
+    }
+
+    .profile-btn:hover {
+        background: rgba(255, 255, 255, 0.329);
+    }
+
+    .dr-name {
+        font-family: "Montserrat", sans-serif;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 25px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .dropdown-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 15px;
+        position: absolute;
+        left: 10px;
+        object-fit: cover;
+    }
+
+    .dropdown-card {
+        background: #383838;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        position: absolute;
+        top: 80px;
+        right: 90px;
+        height: 400px;
+        overflow: scroll;
+        z-index: 100;
+        /* display: none; */
+        border-radius: 0;
+        border: none;
+        /* display: none; */
+        box-shadow: 0 8px 6px -6px black;
+    }
+
+    .doctor-profile {
+        height: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .doctor-profile:hover {
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.329);
+    }
+
+    .profile-pic-small {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+
+    .dr-name2 {
+        text-align: right;
+        color: white;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 20px;
     }
 </style>
